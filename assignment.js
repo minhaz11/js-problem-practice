@@ -1,3 +1,4 @@
+// https://github.com/minhaz11/js-problem-practice
 
 //kilometer to meter conversion
 function kilometerToMeter(kilo){
@@ -70,6 +71,10 @@ function hotelCost(day){
 function megaFriend(friendList){
     var previous = "";
     var maxLengthName = "";
+
+    if(friendList.length == 0){
+        return 0;
+    }
 
     for(var i = 0; i < friendList.length; i++){
         if(friendList[i].length > previous.length){
