@@ -69,7 +69,6 @@ function hotelCost(day){
 
 //mega friend
 function megaFriend(friendList){
-    var previous = "";
     var maxLengthName = "";
 
     if(friendList.length == 0){
@@ -77,12 +76,12 @@ function megaFriend(friendList){
     }
 
     for(var i = 0; i < friendList.length; i++){
-        if(friendList[i].length > previous.length){
+      
+        if(friendList[i].length > maxLengthName.length){
             maxLengthName = friendList[i]
-        } else {
-            previous = friendList[i];
-        }
+        } 
+      
+        
     }
     return maxLengthName;
 }
-
